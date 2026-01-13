@@ -7,8 +7,8 @@ def index():
     return '<h1>Welcome to my page!</h1>'
 
 @app.route('/<string:username>')
-def user(John):
-    return f'<h1>Profile for {John}</h1>'
+def user(username):
+    return f'<h1>Profile for {username}</h1>'
 
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
